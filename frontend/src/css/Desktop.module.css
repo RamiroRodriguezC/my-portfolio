@@ -1,6 +1,6 @@
 .desktop {
   width: 100%;
-  height: calc(100vh - 40px);
+  height: calc(100vh - 32px);
   padding: 8px;
   overflow: hidden;
   background-size: cover;

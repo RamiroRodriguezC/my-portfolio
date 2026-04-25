@@ -2,16 +2,13 @@
   display: flex;
   align-items: center;
   gap: 4px;
-  padding: 2px 4px 2px 2px;
+  padding: 2px 6px 2px 4px;
   height: 24px;
   background: #c0c0c0;
   border: none;
   cursor: pointer;
   position: relative;
-  font-family: 'VT323', 'MS Sans Serif', Tahoma, sans-serif;
-  font-size: 11px;
-  font-weight: bold;
-  font-smooth: never;
+  
   -webkit-font-smoothing: none;
   -moz-osx-font-smoothing: unset;
   text-rendering: optimizeSpeed;
@@ -41,7 +38,7 @@
 }
 
 .startButton:active {
-  padding: 3px 5px 1px 1px;
+  padding: 3px 5px 1px 3px;
 }
 
 .startButton:active::before {
@@ -82,7 +79,10 @@
 }
 
 .label {
-  position: relative;
+  font-family: 'WIN95FA', 'MS Sans Serif', Tahoma, sans-serif;
   color: #000000;
+  font-weight: bold;
   line-height: 1;
+  font-size: 13px;
+  letter-spacing: 0.7px;
 }
