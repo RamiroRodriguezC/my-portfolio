@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "skills": {
+    "unocss": {
+      "source": "antfu/skills",
+      "sourceType": "github",
+      "computedHash": "1054e69977e1d2d3b7c8479adf16b4db43191bf775f150ce8a06a0b1c191318b"
+    }
+  }
+}

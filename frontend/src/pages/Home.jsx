@@ -1,20 +1,30 @@
-import { useAuth } from '../context/AuthContext'
+import Desktop from '../components/containers/Desktop'
+import TaskBar from '../components/containers/TaskBar'
+import { DESKTOP_ICONS, DESKTOP_WALLPAPER } from '../config/constants'
 
 function Home() {
-  const { user, logout } = useAuth()
+  const handleOpenWindow = (icon) => {
+    console.log('Abrir ventana:', icon.name)
+  }
+
+  const handleIconSelect = (iconId) => {
+    console.log('Icono seleccionado:', iconId)
+  }
+
+  const handleStartClick = () => {
+    console.log('Click en Inicio')
+  }
 
   return (
-    <div style={{ padding: '2rem' }}>
-      <h1>Bienvenido al Portfolio</h1>
-      {user ? (
-        <div>
-          <p>Hola, {user.nombre}</p>
-          <button onClick={logout}>Cerrar sesion</button>
-        </div>
-      ) : (
-        <p>Inicia sesion para continuar</p>
-      )}
-    </div>
+    <>
+      <Desktop
+        icons={DESKTOP_ICONS}
+        wallpaper={DESKTOP_WALLPAPER}
+        onOpenWindow={handleOpenWindow}
+        onIconSelect={handleIconSelect}
+      />
+      <TaskBar onStartClick={handleStartClick} />
+    </>
   )
 }
 

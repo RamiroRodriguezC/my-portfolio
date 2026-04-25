@@ -1,0 +1,32 @@
+.iconContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.iconImage {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  display: block;
+}
+
+.iconName {
+  font-size: 12px;
+  text-align: center;
+  padding: 2px 4px;
+  word-wrap: break-word;
+  max-width: 64px;
+  color: #fff;
+}
+
+.selected .iconName {
+  background-color: #000080;
+  color: #fff;
+  border: 1px dashed #fff;
+}
